@@ -1,0 +1,3 @@
+/home/alexey_t/git/lab1/CMakeFiles/rebuild_cache.dir
+/home/alexey_t/git/lab1/CMakeFiles/edit_cache.dir
+/home/alexey_t/git/lab1/CMakeFiles/runTests.dir

@@ -1,0 +1,54 @@
+\hypertarget{machine_8h_source}{}\doxysection{machine.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexey\_t on 19/09/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}patterns.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef LAB1\_MACHINE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define LAB1\_MACHINE\_H}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classmachine}{machine}} \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} operator == (\textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&);}
+\DoxyCodeLine{13     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} operator != (\textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&);}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     std::string ribbon;}
+\DoxyCodeLine{16     \mbox{\hyperlink{classpatterns}{patterns}} rules;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{static} std::string string\_replacer(std::string\&, std::string\&, std::string\&);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} replace(std::string \&);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{28     \mbox{\hyperlink{classmachine_aeeec630a2d822024410a93836835e305}{machine}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{34     \mbox{\hyperlink{classmachine_aeeec630a2d822024410a93836835e305}{machine}}(std::string, std::string);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{40     \mbox{\hyperlink{classmachine_aeeec630a2d822024410a93836835e305}{machine}}(std::string, \mbox{\hyperlink{classpatterns}{patterns}});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmachine_ad31e0847a0f035b90f3b567cc6c49c13}{set\_patterns}}(\mbox{\hyperlink{classpatterns}{patterns}});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50     \mbox{\hyperlink{classpatterns}{patterns}} \mbox{\hyperlink{classmachine_a574efbb31cdec3d038c58f54a22d173f}{get\_patterns}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmachine_a9ae3a059c03010c8a1296871140ba751}{set\_ribbon}}(std::string);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60     std::string \mbox{\hyperlink{classmachine_a4660db81ef7978d221106f4a8e7ebec6}{get\_ribbon}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmachine_a71dd3165aa15b24ae394ca64b1a18927}{step}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{classmachine_a3bd6bda0e962876022cf06e723568937}{start}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keywordtype}{bool} operator == (\textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&);}
+\DoxyCodeLine{75 \textcolor{keywordtype}{bool} operator != (\textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classmachine}{machine}}\&);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//LAB1\_MACHINE\_H}}
+
+\end{DoxyCode}

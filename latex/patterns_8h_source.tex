@@ -1,0 +1,67 @@
+\hypertarget{patterns_8h_source}{}\doxysection{patterns.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexey\_t on 19/09/22.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}iostream"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}string"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}sstream"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}vector"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}algorithm"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef UNTITLED\_PATTERNS\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define UNTITLED\_PATTERNS\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classpatterns}{patterns}} \{}
+\DoxyCodeLine{17     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} operator == (\textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{18     \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} operator != (\textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{19     \textcolor{keyword}{friend} std::ostream\& operator << (std::ostream \&os, \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{20     \textcolor{keyword}{friend} std::istream\& operator >> (std::istream\& in, \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classmachine}{machine}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keyword}{struct }node\{}
+\DoxyCodeLine{25         std::string take, ret;}
+\DoxyCodeLine{26         node *next = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         node(std::string take, std::string ret) : take(std::move(take)), ret(std::move(ret)) \{}
+\DoxyCodeLine{29         \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \}*begin = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{39     \mbox{\hyperlink{classpatterns_a8660922f8f6dfd88f5abe409636e61a3}{patterns}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{45     \mbox{\hyperlink{classpatterns_a8660922f8f6dfd88f5abe409636e61a3}{patterns}}(std::string);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{classpatterns_a63f442b7fbe2a30494a08abc9ccd04a0}{push\_back}}(\textcolor{keyword}{const} std::string);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{classpatterns_a080723a63c2a1a5a5fd6eb578e2232f6}{delete\_pattern}}(\textcolor{keyword}{const} std::string);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classpatterns_acb51ca6affa2ee218ca473ef3b14eab3}{view\_patterns}}();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 std::ostream\& operator << (std::ostream\&, \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 std::istream\& operator >> (std::istream\&, \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keywordtype}{bool} operator == (\textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{69 \textcolor{keywordtype}{bool} operator != (\textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&, \textcolor{keyword}{const} \mbox{\hyperlink{classpatterns}{patterns}}\&);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{keyword}{static} std::vector<std::string> split(\textcolor{keyword}{const} std::string\&);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{static} std::pair<std::string, std::string>cut(\textcolor{keyword}{const} std::string\&);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//UNTITLED\_PATTERNS\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexey_t/git/lab1/machine.cpp
+machine.h
+/home/alexey_t/git/lab1/machine.h
+
+/home/alexey_t/git/lab1/machine.h
+patterns.h
+/home/alexey_t/git/lab1/patterns.h
+
+/home/alexey_t/git/lab1/patterns.cpp
+patterns.h
+/home/alexey_t/git/lab1/patterns.h
+
+/home/alexey_t/git/lab1/patterns.h
+utility
+-
+iostream
+/home/alexey_t/git/lab1/iostream
+string
+/home/alexey_t/git/lab1/string
+sstream
+/home/alexey_t/git/lab1/sstream
+vector
+/home/alexey_t/git/lab1/vector
+algorithm
+/home/alexey_t/git/lab1/algorithm
+
+/home/alexey_t/git/lab1/tests.cpp
+patterns.cpp
+/home/alexey_t/git/lab1/patterns.cpp
+machine.cpp
+/home/alexey_t/git/lab1/machine.cpp
+gtest/gtest.h
+-
+

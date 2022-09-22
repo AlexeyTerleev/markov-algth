@@ -1,0 +1,90 @@
+\hypertarget{classpatterns}{}\doxysection{patterns Class Reference}
+\label{classpatterns}\index{patterns@{patterns}}
+
+
+{\ttfamily \#include $<$patterns.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpatterns_a8660922f8f6dfd88f5abe409636e61a3}{patterns}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpatterns_acd03e6b904be1529b2552c44892cde84}{patterns}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_a63f442b7fbe2a30494a08abc9ccd04a0}{push\+\_\+back}} (const std\+::string)
+\item 
+void \mbox{\hyperlink{classpatterns_a080723a63c2a1a5a5fd6eb578e2232f6}{delete\+\_\+pattern}} (const std\+::string)
+\item 
+void \mbox{\hyperlink{classpatterns_acb51ca6affa2ee218ca473ef3b14eab3}{view\+\_\+patterns}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpatterns_a63ad10b623c0149aab58dac6571556a3}\label{classpatterns_a63ad10b623c0149aab58dac6571556a3}} 
+class {\bfseries machine}
+\item 
+\mbox{\Hypertarget{classpatterns_a98f6804ecf064fa7639b481295fa09a6}\label{classpatterns_a98f6804ecf064fa7639b481295fa09a6}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classpatterns}{patterns}} \&, const \mbox{\hyperlink{classpatterns}{patterns}} \&)
+\item 
+\mbox{\Hypertarget{classpatterns_a77316b221af418a4dcf0c3254a124fe6}\label{classpatterns_a77316b221af418a4dcf0c3254a124fe6}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classpatterns}{patterns}} \&, const \mbox{\hyperlink{classpatterns}{patterns}} \&)
+\item 
+\mbox{\Hypertarget{classpatterns_abf6bea719eb17a7088cc4b8c4cf61ae2}\label{classpatterns_abf6bea719eb17a7088cc4b8c4cf61ae2}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classpatterns}{patterns}} \&)
+\item 
+\mbox{\Hypertarget{classpatterns_aaafa73f0367fe79e3ee703a3b45447cf}\label{classpatterns_aaafa73f0367fe79e3ee703a3b45447cf}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&in, \mbox{\hyperlink{classpatterns}{patterns}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class in which the rules are implemented. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpatterns_a8660922f8f6dfd88f5abe409636e61a3}\label{classpatterns_a8660922f8f6dfd88f5abe409636e61a3}} 
+\index{patterns@{patterns}!patterns@{patterns}}
+\index{patterns@{patterns}!patterns@{patterns}}
+\doxysubsubsection{\texorpdfstring{patterns()}{patterns()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily patterns\+::patterns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A default constructor without arguments. \mbox{\Hypertarget{classpatterns_acd03e6b904be1529b2552c44892cde84}\label{classpatterns_acd03e6b904be1529b2552c44892cde84}} 
+\index{patterns@{patterns}!patterns@{patterns}}
+\index{patterns@{patterns}!patterns@{patterns}}
+\doxysubsubsection{\texorpdfstring{patterns()}{patterns()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily patterns\+::patterns (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A constructor with a string argument, which sets the rules and should look like this \char`\"{}str1-\/$>$str2;str3-\/$>$str4\char`\"{}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatterns_a080723a63c2a1a5a5fd6eb578e2232f6}\label{classpatterns_a080723a63c2a1a5a5fd6eb578e2232f6}} 
+\index{patterns@{patterns}!delete\_pattern@{delete\_pattern}}
+\index{delete\_pattern@{delete\_pattern}!patterns@{patterns}}
+\doxysubsubsection{\texorpdfstring{delete\_pattern()}{delete\_pattern()}}
+{\footnotesize\ttfamily void patterns\+::delete\+\_\+pattern (\begin{DoxyParamCaption}\item[{const std\+::string}]{str }\end{DoxyParamCaption})}
+
+This method removes the rule given as an argument from the list of rules, the argument should look like this \char`\"{}str1-\/$>$str2\char`\"{}. \mbox{\Hypertarget{classpatterns_a63f442b7fbe2a30494a08abc9ccd04a0}\label{classpatterns_a63f442b7fbe2a30494a08abc9ccd04a0}} 
+\index{patterns@{patterns}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!patterns@{patterns}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void patterns\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const std\+::string}]{str }\end{DoxyParamCaption})}
+
+This method adds one rule to the end of the list of rules, the argument should look like this \char`\"{}str1-\/$>$str2\char`\"{}. \mbox{\Hypertarget{classpatterns_acb51ca6affa2ee218ca473ef3b14eab3}\label{classpatterns_acb51ca6affa2ee218ca473ef3b14eab3}} 
+\index{patterns@{patterns}!view\_patterns@{view\_patterns}}
+\index{view\_patterns@{view\_patterns}!patterns@{patterns}}
+\doxysubsubsection{\texorpdfstring{view\_patterns()}{view\_patterns()}}
+{\footnotesize\ttfamily void patterns\+::view\+\_\+patterns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method displays a list of rules. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+patterns.\+h\item 
+patterns.\+cpp\end{DoxyCompactItemize}

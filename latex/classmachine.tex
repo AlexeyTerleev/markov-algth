@@ -1,0 +1,117 @@
+\hypertarget{classmachine}{}\doxysection{machine Class Reference}
+\label{classmachine}\index{machine@{machine}}
+
+
+{\ttfamily \#include $<$machine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmachine_aeeec630a2d822024410a93836835e305}{machine}} ()
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmachine_a6a42b2ad269f41ff3f2895e5ba76e610}{machine}} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmachine_a3608e4d6e9346327a3ee7eb04c640304}{machine}} (std\+::string, \mbox{\hyperlink{classpatterns}{patterns}})
+\begin{DoxyCompactList}\small\item\em A constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmachine_ad31e0847a0f035b90f3b567cc6c49c13}{set\+\_\+patterns}} (\mbox{\hyperlink{classpatterns}{patterns}})
+\item 
+\mbox{\hyperlink{classpatterns}{patterns}} \mbox{\hyperlink{classmachine_a574efbb31cdec3d038c58f54a22d173f}{get\+\_\+patterns}} ()
+\item 
+void \mbox{\hyperlink{classmachine_a9ae3a059c03010c8a1296871140ba751}{set\+\_\+ribbon}} (std\+::string)
+\item 
+std\+::string \mbox{\hyperlink{classmachine_a4660db81ef7978d221106f4a8e7ebec6}{get\+\_\+ribbon}} ()
+\item 
+void \mbox{\hyperlink{classmachine_a71dd3165aa15b24ae394ca64b1a18927}{step}} ()
+\item 
+void \mbox{\hyperlink{classmachine_a3bd6bda0e962876022cf06e723568937}{start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmachine_a547a52510b57a8f877d69a96cbcc2c4d}\label{classmachine_a547a52510b57a8f877d69a96cbcc2c4d}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classmachine}{machine}} \&, const \mbox{\hyperlink{classmachine}{machine}} \&)
+\item 
+\mbox{\Hypertarget{classmachine_a670b145d78b2ecacd35e5d8000d21aae}\label{classmachine_a670b145d78b2ecacd35e5d8000d21aae}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classmachine}{machine}} \&, const \mbox{\hyperlink{classmachine}{machine}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class in which a machine based on Markov algorithms is implemented. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmachine_aeeec630a2d822024410a93836835e305}\label{classmachine_aeeec630a2d822024410a93836835e305}} 
+\index{machine@{machine}!machine@{machine}}
+\index{machine@{machine}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{machine()}{machine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily machine\+::machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A default constructor without arguments. \mbox{\Hypertarget{classmachine_a6a42b2ad269f41ff3f2895e5ba76e610}\label{classmachine_a6a42b2ad269f41ff3f2895e5ba76e610}} 
+\index{machine@{machine}!machine@{machine}}
+\index{machine@{machine}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{machine()}{machine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily machine\+::machine (\begin{DoxyParamCaption}\item[{std\+::string}]{ribbon,  }\item[{std\+::string}]{rules }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A constructor with 2 string arguments, where first parameter is ribbon, second -\/ rules. \mbox{\Hypertarget{classmachine_a3608e4d6e9346327a3ee7eb04c640304}\label{classmachine_a3608e4d6e9346327a3ee7eb04c640304}} 
+\index{machine@{machine}!machine@{machine}}
+\index{machine@{machine}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{machine()}{machine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily machine\+::machine (\begin{DoxyParamCaption}\item[{std\+::string}]{ribbon,  }\item[{\mbox{\hyperlink{classpatterns}{patterns}}}]{rules }\end{DoxyParamCaption})}
+
+
+
+A constructor. 
+
+A constructor with 2 arguments, where first parameter is ribbon (type string), second -\/ rules (type patterns). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmachine_a574efbb31cdec3d038c58f54a22d173f}\label{classmachine_a574efbb31cdec3d038c58f54a22d173f}} 
+\index{machine@{machine}!get\_patterns@{get\_patterns}}
+\index{get\_patterns@{get\_patterns}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{get\_patterns()}{get\_patterns()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpatterns}{patterns}} machine\+::get\+\_\+patterns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the rules of this machine. \mbox{\Hypertarget{classmachine_a4660db81ef7978d221106f4a8e7ebec6}\label{classmachine_a4660db81ef7978d221106f4a8e7ebec6}} 
+\index{machine@{machine}!get\_ribbon@{get\_ribbon}}
+\index{get\_ribbon@{get\_ribbon}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{get\_ribbon()}{get\_ribbon()}}
+{\footnotesize\ttfamily std\+::string machine\+::get\+\_\+ribbon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method returns the ribbon of this machine. \mbox{\Hypertarget{classmachine_ad31e0847a0f035b90f3b567cc6c49c13}\label{classmachine_ad31e0847a0f035b90f3b567cc6c49c13}} 
+\index{machine@{machine}!set\_patterns@{set\_patterns}}
+\index{set\_patterns@{set\_patterns}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{set\_patterns()}{set\_patterns()}}
+{\footnotesize\ttfamily void machine\+::set\+\_\+patterns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpatterns}{patterns}}}]{patterns }\end{DoxyParamCaption})}
+
+This method sets or replaces the rules of this machine. \mbox{\Hypertarget{classmachine_a9ae3a059c03010c8a1296871140ba751}\label{classmachine_a9ae3a059c03010c8a1296871140ba751}} 
+\index{machine@{machine}!set\_ribbon@{set\_ribbon}}
+\index{set\_ribbon@{set\_ribbon}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{set\_ribbon()}{set\_ribbon()}}
+{\footnotesize\ttfamily void machine\+::set\+\_\+ribbon (\begin{DoxyParamCaption}\item[{std\+::string}]{ribbon }\end{DoxyParamCaption})}
+
+This method sets or replaces the ribbon of this machine. \mbox{\Hypertarget{classmachine_a3bd6bda0e962876022cf06e723568937}\label{classmachine_a3bd6bda0e962876022cf06e723568937}} 
+\index{machine@{machine}!start@{start}}
+\index{start@{start}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void machine\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method makes all possible substitutions in the feed according to the given rules. \mbox{\Hypertarget{classmachine_a71dd3165aa15b24ae394ca64b1a18927}\label{classmachine_a71dd3165aa15b24ae394ca64b1a18927}} 
+\index{machine@{machine}!step@{step}}
+\index{step@{step}!machine@{machine}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void machine\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method does one iteration of this machine. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+machine.\+h\item 
+machine.\+cpp\end{DoxyCompactItemize}
